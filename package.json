@@ -1,0 +1,24 @@
+{
+  "name": "portfolio-noroff",
+  "version": "1.0.0",
+  "description": "portfolio-noroff",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jotvibfeng/portfolio-noroff.git"
+  },
+  "keywords": [
+    "Joakim",
+    "Fengaas"
+  ],
+  "author": "Joakim Fengaas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jotvibfeng/portfolio-noroff/issues"
+  },
+  "homepage": "https://github.com/jotvibfeng/portfolio-noroff#readme"
+}
