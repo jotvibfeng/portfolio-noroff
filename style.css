@@ -207,15 +207,14 @@ footer {
  
 
   img {
-    width: 80%; 
-    height: auto;
-    right: auto;
-    top: 20px;
+    height: 100vh;
+    top: 0px;
+    width: 100%;
+    left: 0px;
   }
-
   div.project-info {
-    width: 50%;
-    left: 120px;
+    width: 70%;
+    left: 70px;
     bottom: 90px;
   }
 
@@ -225,7 +224,7 @@ footer {
 
   h3 {
     left: 20px;
-    bottom: 120px;
+    bottom: 100px;
     font-size: 20px;
   }
 
@@ -250,7 +249,7 @@ footer {
 /* Tablets (481px - 768px) */
 @media (min-width: 481px) and (max-width: 768px) {
   div.project-info {
-    bottom: 200px;
+    bottom: 80px;
     width: 70%;
     left: 15%;
   }
@@ -260,70 +259,95 @@ footer {
   }
 
   h3 {
-    bottom: 100px;
+    bottom: 200px;
     font-size: 30px;
   }
 
   .wrapper .icon:hover .tooltip {
-    top: -155px;
+    top: -250px;
     left: 5px;
   }
 
   .wrapper .icon span {
-    bottom: 100px;
+    bottom: 195px;
    left: 20px;
   }
 
   img {
+    height: 100vh;
+    top: 0px;
     width: 100%;
     left: 0px;
+  }
+
+  i {
+    top: -10px;
+    font-size: 40px;
+    left: 150px;
+  }
+
+  h3.follow {
+    left: 20px;
+    top: 25px;
+    font-size: 20px;
   }
 }
 
 /* Laptops (769px - 1024px) */
 @media (min-width: 769px) and (max-width: 1024px) {
   div.project-info {
-    bottom: 30px;
+    bottom: 100px;
     width: 70%;
     left: 15%;
   }
 
   p {
-    font-size: 20px;
+    font-size: 15px;
   }
 
   h3 {
-    bottom: 100px;
+    bottom: 170px;
     font-size: 30px;
   }
 
   .wrapper .icon:hover .tooltip {
-    top: -155px;
+    top: -225px;
     left: 5px;
   }
 
   .wrapper .icon span {
-    bottom: 100px;
+    bottom: 170px;
    left: 20px;
   }
 
   img {
+    height: 100vh;
     width: 100%;
     left: 0px;
   }
 
+  i {
+    top: 25px;
+    font-size: 30px;
+    left: 150px;
+  }
 
+  h3.follow {
+    left: 20px;
+    top: 70px;
+    font-size: 20px;
+  }
   footer {
-    height: 80px;
+    height: 120px;
   }
 }
 
 /* Large Screens (1025px - 1440px) */
 @media (min-width: 1025px) and (max-width: 1440px) {
   div.project-info {
-    bottom: 20px;
-    width: 50%;
-    left: 300px;
+    bottom: 100px;
+    width: 80%;
+    left: 100px;
   }
 
   p {
@@ -331,38 +355,47 @@ footer {
   }
 
   h3 {
-    bottom: 100px;
+    bottom: 200px;
     font-size: 30px;
   }
 
   .wrapper .icon:hover .tooltip {
-    top: -155px;
+    top: -255px;
     left: 5px;
   }
 
   .wrapper .icon span {
-    bottom: 100px;
+    bottom: 200px;
    left: 20px;
   }
 
   img {
     width: 100%;
-    height: 50vh;
-    
+    height: 100vh;
     left: 0px;
+    top: 0px;
+  }
+  i {
+    top: 5px;
+    font-size: 50px;
+    left: 170px;
   }
 
-
+  h3.follow {
+    left: 20px;
+    top: 50px;
+    font-size: 25px;
+  }
   footer {
-    height: 100px;
+    height: 120px;
   }
 }
 
 @media (min-width: 1441px) and (max-width: 1920px) {
   div.project-info {
-    bottom: 20px;
-    width: 40%;
-    left: 450px;
+    bottom: 100px;
+    width: 80%;
+    left: 100px;
   }
 
   p {
@@ -370,29 +403,40 @@ footer {
   }
 
   h3 {
-    bottom: 100px;
+    bottom: 200px;
     font-size: 30px;
   }
 
   .wrapper .icon:hover .tooltip {
-    top: -155px;
+    top: -255px;
     left: 5px;
   }
 
   .wrapper .icon span {
-    bottom: 100px;
+    bottom: 200px;
    left: 20px;
   }
 
   img {
-    width: 50%;
-    height: 50vh;
-    
-    left: 400px;
+    width: 100%;
+    height: 100vh;
+    left: 0px;
+    top: 0px;
+  }
+  i {
+    top: 5px;
+    font-size: 50px;
+    left: 170px;
+  }
+
+  h3.follow {
+    left: 20px;
+    top: 50px;
+    font-size: 25px;
   }
 
 
   footer {
-    height: 100px;
+    height: 120px;
   }
 }
