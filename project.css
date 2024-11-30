@@ -1,0 +1,369 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: roboto, sans-serif;
+  background-color: #ffe8d2;
+  width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+  color: black;
+}
+
+header {
+  margin-top: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem 9%;
+  background-color: transparent;
+  filter: drop-shadow (10px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 3rem;
+  color: #a43d00;
+  font-weight: 800;
+  cursor: pointer;
+  transition: 0.5s ease;
+  font-family: "Playfair Display", sans-serif;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+}
+
+nav a {
+  font-size: 1.8rem;
+  color: black;
+  margin-left: 4rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: 0.3s ease;
+  border-bottom: 3px solid transparent;
+}
+
+nav a:hover,
+nav a.active {
+  color: #c6b09c;
+  border-bottom: 3px solid #c6b09c;
+}
+
+/* Hamburger Button */
+.hamburger {
+  display: none; /* Hidden on larger screens */
+  flex-direction: column;
+  gap: 0.4rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.hamburger span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background: #a43d00;
+  border-radius: 2px; /* Rounded edges for a clean look */
+  transition: all 0.3s ease-in-out;
+}
+
+/* Hamburger Active Animation */
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(4px, 4px);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0; /* Middle bar disappears */
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(4px, -4px);
+}
+
+/* Navigation Menu */
+nav {
+  display: flex; /* Default flex layout for larger screens */
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 1rem;
+}
+
+/* Main container */
+main {
+  position: relative;
+  top: 200px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Portfolio Section */
+.portfolio {
+  background: #f1e2de;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.portfolio-head {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+span {
+  color: #a43d00;
+}
+
+.portfolio-title {
+  font-size: 4rem;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.portfolio-overview {
+  font-size: 1.5rem;
+  color: #555;
+  line-height: 1.8;
+}
+
+/* Content */
+.portfolio-content h3,
+.portfolio-install h3 {
+  font-size: 2rem;
+  margin: 20px 0 10px;
+  color: #444;
+}
+
+.portfolio-content li,
+.portfolio-install li {
+  list-style: disc;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+  color: #555;
+}
+
+/* Slider */
+.slider-container {
+  position: relative;
+  margin-top: 20px;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #000;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.portfolio-images {
+  width: 100%;
+  object-fit: cover;
+  flex-shrink: 0;
+  border-radius: 8px;
+}
+
+button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+/* Skills Section */
+#skills {
+  background: #f1e2de;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio-tech,
+.portfolio-icons {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.portfolio-tech h3,
+.portfolio-icons h3 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.portfolio-tech i,
+.portfolio-icons i {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 6rem;
+  height: 6rem;
+  background-color: transparent;
+  border: 0.2rem solid #a43d00;
+  font-size: 2rem;
+  border-radius: 50%;
+  margin: 3rem 1.5rem 3rem;
+  transition: 0.3s ease;
+  color: #a43d00;
+}
+
+.portfolio-tech i:hover,
+.portfolio-icons i:hover {
+  color: black;
+  transform: scale(1.3) translateY(-5px);
+  background-color: #ffe8d2;
+  box-shadow: 0 0 25px #ffe8d2;
+}
+
+.portfolio-icons a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 1.2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .portfolio-title {
+    font-size: 1.8rem;
+  }
+
+  .portfolio-overview {
+    font-size: 0.9rem;
+  }
+
+  .portfolio-content h3 {
+    font-size: 1.3rem;
+  }
+
+  .portfolio-content li {
+    font-size: 0.9rem;
+  }
+
+  .slider-container {
+    margin-top: 15px;
+  }
+
+  .portfolio-tech i,
+  .portfolio-icons i {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 380px) {
+  .portfolio-title {
+    font-size: 1.5rem;
+  }
+
+  .portfolio-overview {
+    font-size: 0.8rem;
+  }
+
+  .portfolio-content h3 {
+    font-size: 1.2rem;
+  }
+
+  .portfolio-content li {
+    font-size: 0.8rem;
+  }
+
+  .portfolio-tech i,
+  .portfolio-icons i {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 910px) {
+  nav a {
+    display: block;
+    font-size: 2rem;
+    margin: 3rem 0;
+  }
+
+  nav a:hover,
+  nav a.active {
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border-bottom: 0.5rem solid #c6b09c;
+  }
+
+  /* Hamburger menu container */
+  .hamburger {
+    display: flex;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    z-index: 1000;
+  }
+
+  nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 70%;
+    background-color: #ffe8d2;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    flex-direction: column;
+    padding: 1.5rem;
+    align-items: flex-start;
+  }
+
+  /* Show navigation when active */
+  nav.active {
+    display: flex;
+  }
+
+  nav a {
+    font-size: 1.8rem;
+    margin: 1rem 0;
+  }
+
+  /* Animation for hamburger menu (when active) */
+  .hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  .hamburger.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+}

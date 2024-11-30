@@ -13,7 +13,6 @@
       href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
@@ -24,7 +23,113 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="project.css" />
+    <script type="module" src="project.js"></script>
+    <script src="index.js" type="module"></script>
     <title>Semester Project | Portfolio</title>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <a href="/" class="logo">Joakim</a>
+      <button class="hamburger" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav>
+        <a href="/">Home</a>
+        <a href="crosscourse.html">Cross Course Project</a>
+        <a href="semester.html" class="active">Semeseter Project</a>
+        <a href="excam.html">Excam Project</a>
+      </nav>
+    </header>
+    <main>
+      <section class="portfolio">
+        <div class="portfolio-head">
+          <h1 class="portfolio-title">Semester Project</h1>
+          <p class="portfolio-overview">
+            We are half way through first year and now it was time to use what
+            we could do so far by making a website for a new natrual of history
+            museum that is soon to open.
+          </p>
+        </div>
+        <div class="portfolio-content">
+          <h3>What purpose has the site <span>?</span></h3>
+          <li class="portfolio-text">
+            Should appeal to family with small children, and middel school
+            student.
+          </li>
+          <li class="portfolio-text">
+            The museum wanted to make learning fun and excting for the audience.
+          </li>
+          <li class="portfolio-text">
+            Having an easy navigating site with good information about opening
+            hours, what exchibtion there is on show, and others informative
+            deatil they need to know.
+          </li>
+        </div>
+        <div class="portfolio-install">
+          <h3>How to install the project <span>?</span></h3>
+          <li class="portfolio-text">
+            <span class="step">Clone the repo:</span> git clone
+            git@github.com:jotvibfeng/Project_Exam1.git
+          </li>
+          <li class="portfolio-text">
+            <span class="step">Install the dependencies:</span> npm install
+          </li>
+          <li class="portfolio-text">
+            <span class="step"
+              >To run the app, run the following commands:</span
+            >
+            npm run start
+          </li>
+        </div>
+        <div class="slider-container">
+          <button class="prev">&#10094;</button>
+          <div class="slider">
+            <img
+              class="portfolio-images"
+              src="images/semester_project.jpeg"
+              alt="Index images of Gamehub"
+            />
+            <img
+              class="portfolio-images"
+              src="images/semster_about.jpg"
+              alt="Contact page of Gamehub"
+            />
+            <img
+              class="portfolio-images"
+              src="images/semster_visit.jpg"
+              alt="About page of Gamehub"
+            />
+            <img
+              class="portfolio-images"
+              src="images/Semester_exchibtion.jpg"
+              alt="About page of Gamehub"
+            />
+          </div>
+          <button class="next">&#10095;</button>
+        </div>
+      </section>
+      <section id="skills">
+        <div class="portfolio-tech">
+          <h3>Code langues used</h3>
+          <i class="fab fa-html5"></i>
+          <i class="fab fa-css3-alt"></i>
+        </div>
+        <div class="portfolio-icons">
+          <h3>Links</h3>
+          <a
+            href="https://github.com/jotvibfeng/semester-project-noroff"
+            target="_blank"
+          >
+            <i class="fab fa-github"></i
+          ></a>
+          <a href="https://online-text.netlify.app/index" target="_blank">
+            <i class="fas fa-link"></i
+          ></a>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
