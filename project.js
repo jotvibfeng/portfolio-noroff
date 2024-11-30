@@ -1,35 +1,26 @@
 // Image slider
 
-document.addEventListener("DOMContentLoaded", () => {
-  const slides = document.querySelector(".slider");
-  const slideImages = document.querySelectorAll(".portfolio-images");
-  const prevslideButton = document.querySelector(".prev");
-  const nextslideButton = document.querySelector(".next");
+const slides = document.querySelectorAll(".slide");
+const prevButton = document.querySelector(".prev");
+const nextButton = document.querySelector(".next");
 
-  let slideIndex = 0;
+let currentIndex = 0;
 
-  function showSlide(index) {
-    if (index >= slideImages.length) {
-      slideIndex = 0; // Loop back to the first slide
-    } else if (index < 0) {
-      slideIndex = slideImages.length - 1; // Go to the last slide
-    }
-    slides.style.transform = `translateX(-${slideIndex * 100}%)`;
-  }
+// Function to update the active slide
+function updateSlider(newIndex) {
+  slides[currentIndex].classList.remove("active"); // Hide current slide
+  slides[newIndex].classList.add("active"); // Show new slide
+  currentIndex = newIndex; // Update the index
+}
 
-  prevslideButton.addEventListener("click", () => {
-    slideIndex--;
-    showSlide(slideIndex);
-  });
+// Previous button click handler
+prevButton.addEventListener("click", () => {
+  const newIndex = currentIndex > 0 ? currentIndex - 1 : slides.length - 1;
+  updateSlider(newIndex);
+});
 
-  nextslideButton.addEventListener("click", () => {
-    slideIndex++;
-    showSlide(slideIndex);
-  });
-
-  // Optional: Auto slide every 5 seconds
-  setInterval(() => {
-    slideIndex++;
-    showSlide(slideIndex);
-  }, 5000);
+// Next button click handler
+nextButton.addEventListener("click", () => {
+  const newIndex = currentIndex < slides.length - 1 ? currentIndex + 1 : 0;
+  updateSlider(newIndex);
 });
